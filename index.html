@@ -5,11 +5,42 @@
 
 	<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+	<script type="text/javascript" src="vendor/angular/angular-route.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<input ng-model="jay" />
-	Hello World {{jay}} 
+	<div class="container-fluid">
+		<div class="row-fluid">			
+			<div class="col-xs-12">
+				<input ng-model="total" class="form-control" placeholder="Total Bill" />
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="col-sm-3">
+				<input ng-model="person.name" class="form-control col-sm-4" placeholder="Name" />
+			</div>
+			<div class="col-sm-3">
+				<input ng-model="person.payment" class="form-control col-sm-4" placeholder="Personal"/>
+			</div>
+			<div class="col-sm-3">
+				<input ng-model="person.due" class="form-control col-sm-4" placeholder="Due"  />
+			</div>
+			<div class="col-sm-3">
+				<button class="btn btn-primary pull-right " >Settle</button>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<button class="btn btn-warning col-sm-2" >Add Person</button>
+		</div>
+
+	</div>
+
+
+
 </body>
+
+<script type="text/javascript" src="js/app.js"></script>
 </html>

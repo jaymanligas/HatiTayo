@@ -1,0 +1,2 @@
+# GustoMoGustoKo
+### a Sails application
